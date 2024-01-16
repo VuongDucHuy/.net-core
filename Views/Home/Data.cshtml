@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Helllo";
+}
+@model DataViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+  <div class="portlet-body">
+                <div class="">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr class="uppercase col-1">
+                                <th>TÊN</th>
+                                <th>ĐỊA CHỈ</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{ int count = 0;}
+                            @if (Model != null)
+                            {
+                               
+                                    <tr>
+                                        
+                                        <td>@Model.Name</td>
+                                        <td>@Model.Address</td>
+                                
+                                    </tr>
+                                
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            
+
+            </div>
+
+  

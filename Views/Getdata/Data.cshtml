@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Helllo";
+}
+@model ListDataViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+  <div class="portlet-body">
+                <div class="">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr class="uppercase">
+                                <th>TÊN</th>
+                                <th>ĐỊA CHỈ</th>
+                                <th>TÊN SP</th>
+                                <th>GIÁ</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                @if (Model.Listt.Count > 0)
+                {
+                    foreach (var item in Model.Listt)
+                    {
+                                  <tr>
+
+                                                  <td>@item.Name</td>
+                                                  <td>@item.Address</td>
+                                                  <td>@item.tensp</td>
+                                                  <td>@item.gia</td>
+
+                                                </tr>
+                    }
+                      
+
+                }
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
